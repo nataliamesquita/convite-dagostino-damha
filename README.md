@@ -26,6 +26,8 @@ Depois de definir o domínio, troque no `<head>` do `index.html` o `og:image`
 para o endereço completo, por exemplo `https://convite.dagostino.com.br/og.png`.
 O WhatsApp só mostra a miniatura com URL absoluta e em domínio público.
 
+Passo a passo completo de publicação: veja [PUBLICAR.md](PUBLICAR.md).
+
 ## Editar
 
 O código-fonte está em `fonte/`:
