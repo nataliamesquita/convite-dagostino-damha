@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=block" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;height:630px;overflow:hidden;background:#030A1E;font-family:'DM Sans'}
+body{position:relative;color:#F7F2EA}
+body::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:32px 32px}
+.glow{position:absolute;right:120px;top:40px;width:700px;height:700px;background:radial-gradient(circle,rgba(246,160,77,.25),transparent 60%)}
+.door{position:absolute;right:20px;top:-20px;height:670px;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 52% 50%,#000 50%,transparent 100%)}
+.txt{position:absolute;left:72px;top:64px;width:600px}
+.logo{height:40px}
+.eb{margin-top:70px;font-weight:600;font-size:18px;letter-spacing:.24em;text-transform:uppercase;color:#F6A04D}
+h1{font-family:'Bricolage Grotesque';font-weight:700;font-size:64px;line-height:1;letter-spacing:-.035em;margin-top:16px}
+h1 em{font-style:normal;color:#F6A04D}
+.info{margin-top:30px;display:flex;gap:14px;align-items:center;font-size:24px;color:rgba(247,242,234,.8)}
+.info b{color:#F7F2EA;font-weight:600}
+.dot{width:7px;height:7px;background:#E2700A;transform:rotate(45deg)}
+.c{position:absolute;border-radius:1.5px}
+</style></head><body>
+<div class="glow"></div>
+<img class="door" src="porta-final.jpg">
+<div class="txt">
+ <img class="logo" src="logo.png">
+ <p class="eb">Convite · Inauguração</p>
+ <h1>Te convidamos para a <em>inauguração</em> da Dagostino Papelaria e Brinquedo.</h1>
+ <div class="info"><b>Damha</b><span class="dot"></span><b>Coquetel</b><span class="dot"></span><b>26/11</b><span class="dot"></span>19h às 22h</div>
+</div>
+<script>
+const cols=['#E2700A','#F6A04D','#E98AA3','#F7F2EA','#FFD38A','#8DB6E8'];let r=7;const rnd=()=>{r=(r*9301+49297)%233280;return r/233280};
+for(let i=0;i<34;i++){const d=document.createElement('i');d.className='c';const x=700+rnd()*480,y=rnd()*600;d.style.cssText=`left:${x}px;top:${y}px;width:${6+rnd()*6}px;height:${9+rnd()*9}px;background:${cols[i%6]};transform:rotate(${rnd()*360}deg);opacity:${.55+rnd()*.45}`;document.body.appendChild(d)}
+</script>
+</body></html>

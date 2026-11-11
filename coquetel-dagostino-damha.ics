@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DAgostino//Convite//PT
+BEGIN:VEVENT
+UID:coquetel-damha-20261126@grupodagostino.com.br
+DTSTAMP:20261106T120000Z
+DTSTART:20261126T220000Z
+DTEND:20261127T010000Z
+SUMMARY:Inauguração Dagostino Papelaria e Brinquedo · Damha
+LOCATION:Rua José Arlindo de Melo Silva\, 1486\, Parque São Miguel\, São José do Rio Preto - SP
+DESCRIPTION:Comida e drinks\, monitoras para as crianças e manobrista no local.
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:Inauguração Dagostino Papelaria e Brinquedo hoje às 19h
+END:VALARM
+END:VEVENT
+END:VCALENDAR
